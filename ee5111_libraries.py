@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime as dt
 
-def csv_processing(filename):
+def csv_processing_engdata(filename):
     engine_d = pd.read_csv(filename,delimiter=' |\n',header=None,engine='python')
     # To read the engine data
 
