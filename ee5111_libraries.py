@@ -24,3 +24,12 @@ def csv_processing_engdata(filename):
     engine_d['Matric Number'] = 'A0108484B'
 
     return engine_d
+
+def csv_processing(filename):
+    csv = pd.read_csv(filename)
+    # To read the engine data
+    #Header = ['Month','Number_of_rainy_days']
+    #csv.columns = Header # Insert headers for the data
+    csv['Matric Number'] = 'A0108484B'
+
+    return csv
