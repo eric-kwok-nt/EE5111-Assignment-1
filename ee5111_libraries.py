@@ -1,9 +1,6 @@
 
 # coding: utf-8
 
-# In[8]:
-
-
 import pandas as pd
 import numpy as np
 from datetime import datetime as dt
