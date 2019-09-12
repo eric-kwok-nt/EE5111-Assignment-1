@@ -9,8 +9,8 @@ def csv_processing_engdata(filename):
     engine_d = pd.read_csv(filename,delimiter=' |\n',header=None,engine='python')
     # To read the engine data
 
-    Header = ['ID','Cycle','os 1','os 2','os 3']
-    Header += ['sensor '+str(sensor_num) for sensor_num in range(1,len(engine_d.columns)-4)]
+    Header = ['ID','Cycle','os1','os2','os3']
+    Header += ['sensor'+str(sensor_num) for sensor_num in range(1,len(engine_d.columns)-4)]
     # Initialize the headers
 
     engine_d.columns = Header # Insert headers for the data
